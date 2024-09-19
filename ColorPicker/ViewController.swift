@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         blueSlider.value = 1
         
         updateColor()
-     
+        updateControls()
     }
     
     override func viewDidLoad() {
@@ -37,12 +37,14 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         updateColor()
+        updateControls()
     }
     @IBOutlet var blueSwitch: UISwitch!
     
 
     @IBAction func switchChanged(_ sender: Any) {
         updateColor()
+        updateControls()
     }
     
     func updateColor() {
@@ -65,5 +67,12 @@ class ViewController: UIViewController {
     @IBAction func sliderChanged(_ sender: Any) {
         updateColor()
     }
+    
+    func updateControls() {
+        redSlider.isEnabled = redSwitch.isOn
+        greenSlider.isEnabled = greenSwitch.isOn
+        blueSlider.isEnabled = blueSwitch.isOn
+    }
 }
+
 
