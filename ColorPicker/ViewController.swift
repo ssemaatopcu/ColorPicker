@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
+    @IBAction func reset(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateColor()
