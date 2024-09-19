@@ -18,6 +18,16 @@ class ViewController: UIViewController {
     @IBOutlet var blueSlider: UISlider!
     
     @IBAction func reset(_ sender: Any) {
+        redSwitch.isOn = false
+        greenSwitch.isOn = false
+        blueSwitch.isOn = false
+        
+        redSlider.value = 1
+        greenSlider.value = 1
+        blueSlider.value = 1
+        
+        updateColor()
+     
     }
     
     override func viewDidLoad() {
