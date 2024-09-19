@@ -46,6 +46,7 @@ class ViewController: UIViewController {
         colorView.backgroundColor = color
     }
     @IBAction func sliderChanged(_ sender: Any) {
+        updateColor()
     }
 }
 
