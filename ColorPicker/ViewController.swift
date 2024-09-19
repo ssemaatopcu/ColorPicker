@@ -31,6 +31,10 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        colorView.layer.borderWidth = 2
+        colorView.layer.cornerRadius = 15
+        colorView.layer.borderColor = UIColor.black.cgColor
+        
         super.viewDidLoad()
         updateColor()
     }
